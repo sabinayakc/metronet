@@ -1,0 +1,121 @@
+$form-width: 50vw;
+$primary-color:  #8ebf42;
+$secondary-color: #efe7e7 ;
+$background-color: #246BA3; 
+$white: #fff;
+$black: #000;
+$font-size-md: 14px;
+$font-size-lg: 32px;
+$banner-height: 200px;
+$padding: 20px;
+$form-input-width: 100%;
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: $font-size-md;
+    background-color: $background-color;
+    line-height: 22px;
+}
+
+div, form, input, textarea, p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: $font-size-md;
+    color: $black;
+    line-height: 22px;
+}
+
+h1 {
+    position: absolute;
+    margin: 0;
+    font-size: $font-size-lg;
+    color: $white;
+    z-index: 2;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: $padding;
+}
+
+.form-submission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    visibility:hidden;
+}
+
+
+.form {
+    width:$form-width;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 30px 0 #8ebf42;
+
+    input, textarea{
+        width: $form-input-width
+    }
+}
+
+.form-banner {
+    position: relative;
+    height: $banner-height;
+    background-image: url("https://www.metronetinc.com/wp-content/uploads/2018/04/MetroNetLogo.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.btn-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #8ebf42;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background: #82b534;
+    }
+}
+
+@media (max-width: 568px) {
+    .btn-container {
+        text-align: left;
+    }
+}

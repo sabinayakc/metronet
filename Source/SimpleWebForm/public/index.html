@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Introduction</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form" novalidate>
+            <div class="form-banner">
+                <h1>Team Introduction</h1>
+            </div>
+            <form id="introduction-form" novalidate class="form-main">
+                <div class="form-item">
+                    <p>Name</p>
+                    <div class="name-item">
+                        <input type="text" name="Name" placeholder="Enter Your Full Name" required />
+                    </div>
+                </div>
+                <div class="form-item">
+                    <p>Fun Fact</p>
+                    <textarea rows="3" name="FunFact" required placeholder="Please enter a fun fact about yourself"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button id="submit" type="submit" href="javascript:void">Introduce Yourself</button>
+                </div>
+            </form>
+            <div id="form-submission" class="form-main form-submission">
+              
+            </div>
+        </div>
+    </div>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

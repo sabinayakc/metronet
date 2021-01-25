@@ -1,0 +1,21 @@
+{
+  "name": "simple-web-form",
+  "version": "0.0.0",
+  "description": "SimpleWebForm",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "scss": "node-sass --watch public/scss -o public/css"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
